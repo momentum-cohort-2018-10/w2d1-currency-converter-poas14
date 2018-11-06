@@ -8,3 +8,4 @@ def convert(rates, value, current, to):
     for x in rates:
         if current == x[2] and to == x[1]:
             return value / x[0]
+    raise ValueError("Cannot convert these two currencies")
